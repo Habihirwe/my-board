@@ -1,0 +1,181 @@
+label{
+    color:black;
+    margin-right: 120px;
+    margin-left:50px;
+    padding-top: 8px;
+    font-size: 35px;
+   
+}
+nav{
+    background-color:white; 
+    height: auto;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+
+    /* gap: 50px; */
+}
+h1{
+    font-size: 25px;
+    margin-left: 120px;
+}
+nav ul{
+    line-height: 50px;
+    margin-top:none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+    justify-content: space-between ;
+    align-content: center;
+    margin-right: 120px;
+    gap: 50px;
+}
+nav ul li{
+    margin-top: 0%;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: red;
+}
+body{
+    background: rgb(80, 74, 74);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-left: 120px;
+    background: rgba(255 255 255/50%);
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+h1{
+    margin-left: 60px;
+    color: white;
+}
+form{
+    margin-left: 10px;
+}
+p{
+    margin-left: 60px;
+    color: white;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+input{
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.name{
+    font-size: 20px;
+}
+.password{
+    font-size: 20px;
+}
+.email{
+    font-size: 20px;
+}
+button{
+    width: 80px;
+    margin-left: 310px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background: black;
+}
+form label{
+    color: white;
+}
+main p a{
+    color: white;
+}
+.main{
+    align-items: center;
+}
+label{
+    /* margin-top: 15px; */
+}
+#pj img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    display: none;
+}
+.open{
+    display: block;
+}
+@media only screen and (max-device-width:780px){
+    nav{
+        display: flex;
+        /* flex-direction: column; */
+        position:relative;
+
+    }
+    nav ul{
+        margin-top:0;
+        flex-direction: column;
+        gap: 10px;
+        position:absolute;
+        top: 48px;
+        right: 20px;
+        background:rgba(255 255 255/50%);
+        
+    }
+    /* nav ul li{
+        padding-right:5vw;
+        
+    } */
+    #pj img{
+        display: block;
+    }
+    #pj {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    
+
+}
+@media only screen and (max-device-width:665px){
+    main{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-device-width:555px){
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        margin-left: 100px
+    }
+    main{
+        margin-left: 5px;
+        margin-top: 20px;
+        
+    }
+    
+}
