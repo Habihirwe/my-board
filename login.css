@@ -139,9 +139,17 @@ main{
     height: 30px;
     margin-top: 15px;
     display: none;
+  
+    
 }
 .open{
     display: block;
+}
+button{
+    padding: 10px;
+}
+button:hover{
+    background:brown;
 }
 @media only screen and (max-device-width:910px){
     img{

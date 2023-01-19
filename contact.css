@@ -122,6 +122,7 @@ button{
     color: white;
     background:black;
     border-radius: 5px;
+    margin-left:125px;
     /* width: 200px; */
 }
 .inputs label{

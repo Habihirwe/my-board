@@ -104,11 +104,11 @@ body{
     color: white;
 }
 img{
-    width: 200px;
-    height:200px;
+    width: 400px;
+    height:400px;
 }
 .blog-box{
-    width: 200px;
+    width: 400px;
     background-color: #ffffff;
     border: 0.1px solid #ececec;
     margin: 20px;
@@ -142,12 +142,12 @@ img{
     transition: all ease 0.3s;
 }
 .blog-text p{
-    color: #9b9b9b;
-    font-size: 0.9rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
+    color:black;
+    font-size: 0.9rem; */
+    /* display: -webkit-box;
+    -webkit-line-clamp: 3; */
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
     margin: 20px 0px;
 }
