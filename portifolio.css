@@ -1,73 +1,47 @@
-label{
-    color:black;
-    margin-right: 120px;
-    margin-left:50px;
-    padding-top: 8px;
-    font-size: 35px;
-   
-}
-nav{
-    background-color:white; 
-    height: auto;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 0;
 
-    /* gap: 50px; */
-}
-h1{
-    font-size: 25px;
-    margin-left: auto;
-}
-nav ul{
-    line-height: 50px;
-    margin-top:none;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-between ;
-    align-content: center;
-    margin-right: 120px;
-    gap: 50px;
-}
-nav ul li{
-    margin-top: 0%;
-    list-style: none;
-    
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-nav a:hover{
-    color: red;
-}
 .paragraph{
     display: flex;
     flex-direction: column ;
     margin-right: 200px;
     margin-top: 35px;
     font-size: 20px;
-    color: white;
+    color: black;
     
 }
 img{
     object-fit:cover;
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 100%;
     /* justify-content: left; */
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     display:flex
     
+    
 }
+.paragraph-1{
+    border: 0.1px solid #ececec;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+img:hover{
+    
+        scale: 1.2;
+        color: aliceblue;
+        transition: 0.3s;
+    }
+
+
 
 button{
     box-sizing: border-box;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-bottom: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -76,6 +50,7 @@ button{
 button a{
     color: white;
     font-size: large;
+    
 }
 .start{
     display: flex;
@@ -85,21 +60,12 @@ button a{
     
 }
 body{
-    background:rgb(80, 74, 74);
+    background: rgb(254, 254, 254);
     margin: auto;
 }
 h1{
     color: white;
    
-}
-#pj img{
-    width: 30px;
-    height: 30px;
-    margin-top: 15px;
-    display: none;
-}
-.open{
-    display: block;
 }
 @media only screen and (max-device-width:830px){
     .start{
@@ -128,9 +94,8 @@ h1{
     } */
 }
 @media only screen and (max-device-width:775px){
-    nav{
+    /* nav{
         display: flex;
-        /* flex-direction: column; */
         position:relative;
 
     }
@@ -144,10 +109,6 @@ h1{
         background:rgba(255 255 255/50%);
         
     }
-    /* nav ul li{
-        padding-right:5vw;
-        
-    } */
     #pj img{
         display: block;
     }
@@ -157,7 +118,7 @@ h1{
     }
     nav ul{
         display: none;
-    }
+    } */
     
     
 }

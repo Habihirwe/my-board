@@ -67,7 +67,7 @@ ul{
     list-style: none;
 }
 body{
-    background: rgb(80, 74, 74);
+    background: white;
     color: white;
     padding: 0px;
     margin: 0px;
@@ -92,7 +92,7 @@ body{
 }
 .blog-heading h3{
     font-size: 2.4rem;
-    color:white;
+    color:black;
     font-weight: 600;
 }
 .blog-container{
