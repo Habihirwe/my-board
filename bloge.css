@@ -1,0 +1,87 @@
+.blog{
+    align-items: center;
+    
+}
+div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+#text{
+    width: 200px;
+    height: 100px;
+}
+button{
+    width: 210px;
+    padding: 10px;
+}
+label{
+    color:black;
+    margin-right: 120px;
+    margin-left:50px;
+    padding-top: 8px;
+    font-size: 35px;
+ 
+}
+nav{
+    background-color:white; 
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* margin-left: 0; */
+
+    /* gap: 50px; */
+}
+nav ul{
+
+    /* margin-top:none; */
+    display: flex;
+    flex-direction: row;
+    /* margin: 0 5px; */
+    /* justify-content: space-between ; */
+    align-content: center;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin: auto;
+
+}
+nav ul li{
+    margin-top: auto;
+    list-style: none;
+    /* position:absolute; */
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: red;
+    
+}
+#pj img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    display: none;
+}
+img{
+    width: 30px;
+    height: 30px;
+    color: white;
+    
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+}
+body{
+    color: white;
+    background: rgb(80, 74, 74) ;
+    margin: auto;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body class="main">
+    <nav>
+        <label class="logo">H.</label>
+        <ul class="list">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="blogs.html">Blogs</a>
+            </li>
+            <li>
+                <a href="portifolio.html">Portifolio</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="signup.html">Signup</a>
+            </li>
+        </ul>
+        <div id="pj" class="menu">
+            <img src="./icons/menu.jpg" alt="">
+        </div>
+    </nav>
+   
+    <main>
+         <h1 class="head">Signup</h1>
+         <p>Already have any account? <a href="login.html"><u>login here</u> </a></p>
+     <form onsubmit="adddata()" class="form" id="signUpForm">
+         <div>
+            <label for="name" class="name"> First Name:</label>
+            <input type="name" id="firstName"/>
+         </div>
+         <div>
+            <label for="name" class="name">Second name:</label>
+            <input type="name" id="lastName" />
+         </div>
+         <div class="email">
+            <label for="email" class="email">Email Id:</label>
+            <input type="email" id="email" />
+         </div>
+         <div>
+            <label for="password" class="password">Password:</label>
+            <input type="password" id="password" />
+         </div>
+         <div>
+            <label for="repeatPassword" class="password">Repeat password:</label>
+            <input type="password" id="repeatPassword" />
+         </div>
+         <div id="signUpMessage">hello</div>
+     
+     <button type="submit"  id="signUpButton" class="signUpButton">Submit</button>
+    </form>
+
+    </main>
+    
+    <script src="signup.js" ></script>
+
+</body>
+</html>
