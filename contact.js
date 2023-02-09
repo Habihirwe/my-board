@@ -1,21 +1,21 @@
-// let menu = document.querySelector(".menu");
-// let navbar = document.querySelector('.list');
+let menu = document.querySelector(".menu");
+let navbar = document.querySelector('.list');
 
-// const url=window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-// let activate=document.querySelectorAll("nav a").forEach((link)=>{
-//     const ffr=link.href.split("/")
-//     console.log(ffr);
-//     if(ffr.includes(url)){
-//         console.log(url);
-//         link.classList.add('active')
-//     }
-// })
+const url=window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
+let activate=document.querySelectorAll("nav a").forEach((link)=>{
+    const ffr=link.href.split("/")
+    console.log(ffr);
+    if(ffr.includes(url)){
+        console.log(url);
+        link.classList.add('active')
+    }
+})
 
 
-// menu.onclick = ()=> {
-//     // menu.classList.toggle('');
-//     navbar.classList.toggle('open')
-// }
+menu.onclick = ()=> {
+    // menu.classList.toggle('');
+    navbar.classList.toggle('open')
+}
 
 // function adddata(){
 //     var firstname=document.getElementById('first-name').value;
@@ -37,21 +37,19 @@ const email = document.getElementById('email');
 const message = document.getElementById('message');
 const messageSubmitButton = document.getElementById('messageSubmitButton');
 const contactForm = document.getElementById('contactForm')
-// const clientMessages = document.getElementById('clientMessages');
+
 
 clientMessages.style.display = "none";
 
 messageSubmitButton.addEventListener("click", (event) => {
   event.preventDefault();
-//   clientMessages.style.display = "block";
-//   clientMessages.innerHTML = `<img src="../Assets/loading1.gif" alt="" width="8%">`;
   contactMessage();
 });
 
 function contactMessage() {
   const data = {
-    fname: firstName.value,
-    lname: lastName.value,
+    firstName: firstName.value,
+    lastName: lastName.value,
     email: email.value,
     message: message.value
   };

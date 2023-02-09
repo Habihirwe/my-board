@@ -9,26 +9,29 @@
 </head>
 <body>
     <div class="conatiner">
-        <h1>Create Blogs</h1>
+        <form id="blogForm">
+            <h1>Update a Blog</h1>
         <main>
             <div class="photo">
                 <label >photo</label>
-                <input type="file" id="blogImage">
+                <input type="file">
             </div>
-            <div class="title">
+            <div class="title" id="title">
                 <label>Title</label>
-                <input type="text" id="blogTitle">
+                <input type="text">
             </div>
             <div class="description" aria-placeholder="">
                 <label>Description</label>
-                <textarea name="Description" id="blogDescription" cols="30" rows="10"></textarea>
+               <textarea name="description" id="" cols="30" rows="10"></textarea>
             </div>
             <div class="btn">
-                <button id="blogSubmitData">Submit</button>
+                <button>Save</button>
             </div>
-            <div id="postMessage"> </div>
         </main>
+
+        </form>
+        
     </div>
-   <script src="create.blog.js"></script>
+   
 </body>
 </html>

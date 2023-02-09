@@ -16,19 +16,20 @@ main{
     border-radius: 20px;
 }
 .conatiner button {
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     color: white;
     background: black;
     font-weight: bold;
 }
-.title input{
-    height: 50px;
-    width: 250px;
-}
-/* .description input{
+.description input{
     height: 100px;
     width: 300px;
     word-wrap: break-word
-} */
+}
+.title input{
+    height: 100px;
+    width: 300px;
+}
+
 
