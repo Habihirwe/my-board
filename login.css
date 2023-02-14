@@ -1,53 +1,7 @@
-label{
-    color:black;
-    margin-right: 120px;
-    margin-left:50px;
-    padding-top: 8px;
-    font-size: 35px;
-   
-}
-nav{
-    background-color:white; 
-    height: auto;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 0;
 
-    /* gap: 50px; */
-}
-h1{
-    font-size: 25px;
-    color: white;
-    margin-left: 120px;
-}
-nav ul{
-    line-height: 50px;
-    margin-top:none;
-    display: flex;
-    flex-direction: row;
-    margin: 0 5px;
-    justify-content: space-between ;
-    align-content: center;
-    margin-right: 120px;
-    gap: 50px;
-}
-nav ul li{
-    margin-top: 0%;
-    list-style: none;
-    
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-nav a:hover{
-    color: red;
-}
 img{
     margin-top: 100px;
-    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 350px;
     height: 300px;
 }
@@ -55,11 +9,15 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 20px;
 }
 h1{
     font-size: 20px;
     margin-left: 105px;
     margin-top: 80px;
+}
+.email label{
+    font-size: 20px;
 }
 .email{
     
@@ -68,23 +26,38 @@ h1{
     justify-content: space-between;
     
 }
+.password label{
+    font-size: 20px;
+}
 .container{
+    
     display: flex;
     flex-direction: column;
     
    
 }
+
+a button{
+    margin-left: 270px;
+    
+    
+}
+img:hover{
+    
+    scale: 1.2;
+    color: aliceblue;
+    transition: 0.3s;
+}
 button{
-    margin-left: 80px;
+    
     padding: 5px;
-    margin-left: 255px;
     color: white;
     background: black;
     border-radius: 10px;
     border: none;
 }
 body{
-    background: rgb(80, 74, 74);
+    background: white;
     /* display:flex ;
     flex-direction: column;
     gap: 50px; */
@@ -94,7 +67,8 @@ input{
     padding: 10px;
     align-content: center;
     border-radius: 5px;
-    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
 }
 .para{
     display: flex;
@@ -102,7 +76,7 @@ input{
     /* justify-content: space-between; */
     margin-left: 50px;
     gap: 15px;
-    color: white;
+    color: black;
     
 }
 label{
@@ -127,24 +101,15 @@ main{
 }
 .change{
     margin-left: 55px;
-}
-.para p a{
-    color: white;
-}
-.label label{
-    color: white;
-}
-#pj img{
-    width: 30px;
-    height: 30px;
-    margin-top: 15px;
-    display: none;
-  
     
 }
-.open{
-    display: block;
+.para p a{
+    color: black;
 }
+.label label{
+    color: black;
+}
+
 button{
     padding: 10px;
 }

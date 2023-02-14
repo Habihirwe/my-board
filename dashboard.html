@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/c89b10ae57.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -31,53 +33,92 @@
             </li>
         </ul>
     </nav>
-    <div class="contact">
-        <div>
-            <img src="./icons/home.jpg" alt="">
-            <span class="home">Dashboard</span><br/>
+    <section class="container">
+
+        <div class="sidebar">
+            <a href="dashboard.html">
+                <div class="sidebar_1">
+                    <i class="fa-solid fa-blog"></i>
+                    <span class="home">Blog</span>
+                </div>
+            </a>
+            <a href="messages.html">
+                <div class="sidebar_1">
+                    <i class="fa-solid fa-message"></i>
+                    <span class="home">Messages</span>
+                </div>
+            </a>
+            
+           
+            <div class="sidebar_1">
+                <i class="fa-solid fa-comment"></i>
+                <span class="home">Comments</span>
+            </div>
+            <div class="sidebar_1">
+                <i class="fa-solid fa-gear"></i>
+                <span class="home">Settings</span>
+            </div>
+            <div class="sidebar_1" id="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="home">Sign out</span>
+            </div>
+         
         </div>
-       <!-- <div>
-            <img src="./icons/users.png" alt="">
-            <span class="number">Users</span><br/>
-       </div>
-       <div>
-            <img src="./icons/comment.jpg" alt="">
-            <span class="facebook">Comments</span><br/>
-       </div>
-       <div>
-            <img src="./icons/comment.jpg" alt="">
-            <span class="email">Message</span>
-       </div>
-       <div>
-            <img src="./icons/help.jpg" alt="">
-            <span class="facebook">Help</span><br/>
-       </div>
-       <div>
-            <img src="./icons/settings.jpg" alt="">
-            <span class="email">Settings</span>
+        <div class="main_body">
+            <section id="blog">
+                <div class="blog-container">
+                    <div class="blog-box">
+                        <div class="blog-image">
+                            <span id="blog-image">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                            <img src="library.jpg" alt="">
+                        </div>
+                        <div class="blog-text">
+                            
+                            <a href="#" class="blog-title">The most visited library </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae massa sollicitudin, finibus nulla id, lacinia leo</p>
+                            <a href="one.html">Read More</a>
+                            
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <div class="blog-image">
+                            <span id="blog-image">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                            <img src="choral.jpg" alt="">
+                        </div>
+                        <div class="blog-text">
+                            
+                            <a href="three.html" class="blog-title"> Top 10 museum in Africa</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae massa sollicitudin, finibus nulla id, lacinia leo</p>
+                            <a href="two.html">Read More</a>
+                        
+                        </div>
+                
+                    </div>
+                    <div class="blog-box">
+                        <div class="blog-image">
+                            <span id="blog-image">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                            <img src="books.jpg" alt="">
+                        </div>
+                        <div class="blog-text">
+                            
+                            <a href="#" class="blog-title"> books as a source of knowledge</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae massa sollicitudin, finibus nulla id, lacinia leo</p>
+                            <a href="three">Read More</a>
+                         
+                        </div>
+                
+                    </div>
+                    
+                    
+                </div>
+               </section>  
         </div>
-        <div>
-            <img src="./icons/password.png" alt="">
-            <span class="facebook">Password</span><br/>
-       </div> -->
-       <div>
-        <a href="blog-2.html">
-            <img src="./icons/comment.jpg" alt="">
-            <span class="facebook">Blogs</span><br/>
-        </a>
-        
-       </div>
-       <div>
-        <a href="edit.html">
-            <img src="./icons/comment.jpg" alt="">
-            <span class="email">Quareries</span>
-        </a>
-        
-       </div>
-       <div>
-            <img src="./icons/signout.png" alt="">
-            <span class="email">signout</span>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
