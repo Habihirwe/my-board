@@ -1,21 +1,22 @@
 let menu = document.querySelector(".menu");
-let navbar = document.querySelector('.list');
+let navbar = document.querySelector(".list");
 
-const url=window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-let activate=document.querySelectorAll("nav a").forEach((link)=>{
-    const ffr=link.href.split("/")
-    console.log(ffr);
-    if(ffr.includes(url)){
-        console.log(url);
-        link.classList.add('active')
-    }
-})
+const url = window.location.href.substring(
+  window.location.href.lastIndexOf("/") + 1
+);
+let activate = document.querySelectorAll("nav a").forEach((link) => {
+  const ffr = link.href.split("/");
+  console.log(ffr);
+  if (ffr.includes(url)) {
+    console.log(url);
+    link.classList.add("active");
+  }
+});
 
-
-menu.onclick = ()=> {
-    // menu.classList.toggle('');
-    navbar.classList.toggle('open')
-}
+menu.onclick = () => {
+  // menu.classList.toggle('');
+  navbar.classList.toggle("open");
+};
 
 // function adddata(){
 //     var firstname=document.getElementById('first-name').value;
@@ -31,15 +32,14 @@ menu.onclick = ()=> {
 //     alert("message sent")
 // }
 
-const firstName = document.getElementById('firstName');
-const lastName = document.getElementById('lastName');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
-const messageSubmitButton = document.getElementById('messageSubmitButton');
-const contactForm = document.getElementById('contactForm')
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+const messageSubmitButton = document.getElementById("messageSubmitButton");
+const contactForm = document.getElementById("contactForm");
 
-
-clientMessages.style.display = "none";
+// clientMessage.style.display = "none";
 
 messageSubmitButton.addEventListener("click", (event) => {
   event.preventDefault();
@@ -51,49 +51,37 @@ function contactMessage() {
     firstName: firstName.value,
     lastName: lastName.value,
     email: email.value,
-    message: message.value
+    message: message.value,
   };
-
+  console.log({ data });
   const sendData = {
     method: "POST",
     body: JSON.stringify(data),
-    headers: new Headers({'Content-Type': 'application/json; charset=UTF-8'})
+    headers: new Headers({ "Content-Type": "application/json; charset=UTF-8" }),
   };
 
-  fetch("http://localhost:3000/api/createMessage", sendData)
-    .then(response => response.json())
-    .then((data) => {
+  fetch(
+    "https://my-brand-backend-h3es.onrender.com/api/createMessage",
+    sendData
+  )
+    .then(async (response) => ({ data: await response.json(), response }))
+    .then(({ data, response }) => {
       console.log(data);
+      if (response.status == 201) {
+        clientMessage.style.color = "green";
+        clientMessage.innerHTML = "message sent";
 
-      if (data.message) {
-        clientMessages.style.color = "red";
-        clientMessages.innerHTML = data.message;
-      } if (data.successMessage && data.message) {
-        clientMessages.style.color = "green";
-        clientMessages.innerHTML = data.successMessage;
-       
-
-
-        contactForm.reset()
-      setTimeout(()=>{location = "home.html"}, 2000)
-
-      } else if (data.validationError) {
-        clientMessages.style.color = "red";
-        clientMessages.innerHTML = data.validationError;
+        contactForm.reset();
+        setTimeout(() => {
+          window.location.assign = "home.html";
+        }, 2000);
+      } else if (response.status == 400) {
+        clientMessage.style.color = "red";
+        clientMessage.innerHTML = data.validationError;
       } else {
-        clientMessages.style.color = "red";
-        clientMessages.innerHTML = "Something went wrong, we were unable to register this account!";
+        clientMessage.style.color = "red";
+        clientMessage.innerHTML =
+          "Something went wrong, we were unable to register this account!";
       }
     });
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -58,6 +58,7 @@ h2{
     margin: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    contain: content;
 }
 .blog-img{
     /* width: 350px; */
@@ -135,4 +136,6 @@ h2{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center
 }

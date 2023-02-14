@@ -25,9 +25,7 @@
 //         alert("invalid email")
 //     }
 
-
 // }
-
 
 const loginForm = document.getElementById("loginForm");
 const email = document.getElementById("email");
@@ -35,56 +33,43 @@ const password = document.getElementById("password");
 const loginButton = document.getElementById("loginButton");
 const loginMessage = document.getElementById("loginMessage");
 
-loginMessage.style.display = "none"
+loginMessage.style.display = "none";
 
+loginButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  loginMessage.style.display = "block";
+  loginMessage.innerHTML = `<img src="../Assets/loading1.gif" alt="" width="8%">`;
 
-loginButton.addEventListener("click", (event)=>{
-    event.preventDefault();
-    loginMessage.style.display = "block"
-    loginMessage.innerHTML = `<img src="../Assets/loading1.gif" alt="" width="8%">`
-
-    login();
+  login();
 });
 
-function login(){
-    const data = {
-        email: email.value,
-        password: password.value
-    }
+function login() {
+  const data = {
+    email: email.value,
+    password: password.value,
+  };
 
-    const sendData = {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: new Headers({'Content-Type': 'application/json; charset=UTF-8'})
-    }
+  const sendData = {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: new Headers({ "Content-Type": "application/json; charset=UTF-8" }),
+  };
 
-    fetch("http://localhost:3000/api/login", sendData)
-    .then(response => response.json())
-    .then((fetchedData)=>{
-        console.log(fetchedData)
-    
-        if (fetchedData.InvalidCredentials){
-            loginMessage.style.color = "red"
-            loginMessage.innerHTML = fetchedData.InvalidCredentials
-        }
+  fetch("https://my-brand-backend-h3es.onrender.com/api/login", sendData)
+    .then((response) => response.json())
+    .then((fetchedData) => {
+      console.log(fetchedData.token);
 
-        else if (fetchedData.successMessage){
-            localStorage.setItem("token", JSON.stringify(fetchedData.token))
-            location = "dashboard.html";
-        }
-
-        else{
-            loginMessage.style.color = "red"
-            loginMessage.innerHTML = "Something went wrong, we were unable to login this account!"
-        }
-
-    })
-
+      if (fetchedData.InvalidCredentials) {
+        loginMessage.style.color = "red";
+        loginMessage.innerHTML = fetchedData.InvalidCredentials;
+      } else if (fetchedData.successMessage) {
+        localStorage.setItem("token", JSON.stringify(fetchedData.token));
+        location = "dashboard.html";
+      } else {
+        loginMessage.style.color = "red";
+        loginMessage.innerHTML =
+          "Something went wrong, we were unable to login this account!";
+      }
+    });
 }
-
-
-
-
-
-
-
