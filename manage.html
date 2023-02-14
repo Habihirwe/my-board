@@ -1,140 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="dashboard.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="manage.css">
-    <script src="https://kit.fontawesome.com/c89b10ae57.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="manage.css" />
+    <script
+      src="https://kit.fontawesome.com/c89b10ae57.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav>
-        <label class="logo">H.</label>
-        <ul>
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <li>
-                <a href="blogs.html">Blogs</a>
-            </li>
-            <li>
-                <a href="portifolio.html">Portifolio</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="signup.html">Signup</a>
-            </li>
-        </ul>
+      <label class="logo">H.</label>
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="blogs.html">Blogs</a>
+        </li>
+        <li>
+          <a href="portifolio.html">Portifolio</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="signup.html">Signup</a>
+        </li>
+      </ul>
     </nav>
     <section class="container">
+      <div class="sidebar">
+        <a href="dashboard.html">
+          <div class="sidebar_1">
+            <i class="fa-solid fa-blog"></i>
+            <span class="home">Blog</span>
+          </div>
+        </a>
+        <a href="messages.html">
+          <div class="sidebar_1">
+            <i class="fa-solid fa-message"></i>
+            <span class="home">Messages</span>
+          </div>
+        </a>
 
-        <div class="sidebar">
-            <a href="dashboard.html">
-                <div class="sidebar_1">
-                    <i class="fa-solid fa-blog"></i>
-                    <span class="home">Blog</span>
-                </div>
-            </a>
-            <a href="messages.html">
-                <div class="sidebar_1">
-                    <i class="fa-solid fa-message"></i>
-                    <span class="home">Messages</span>
-                </div>
-            </a>
-            
-           <a href="comments.html">
-            <div class="sidebar_1">
-                <i class="fa-solid fa-comment"></i>
-                <span class="home">Comments</span>
-            </div>
-           </a>
-            
-            <div class="sidebar_1">
-                <i class="fa-solid fa-gear"></i>
-                <span class="home">Settings</span>
-            </div>
-            <div class="sidebar_1" id="logout">
-                <i class="fa-solid fa-right-from-bracket"></i>
-                <span class="home">Sign out</span>
-            </div>
-         
+        <a href="comments.html">
+          <div class="sidebar_1">
+            <i class="fa-solid fa-comment"></i>
+            <span class="home">Comments</span>
+          </div>
+        </a>
+
+        <div class="sidebar_1">
+          <i class="fa-solid fa-gear"></i>
+          <span class="home">Settings</span>
         </div>
-        <main >
-            <h1 class="title">blog management</h1>
-            <div class="button">
-                <a href="create.blog.html"><button>create New Blogs</button></a>
-                
-            </div>
-            <div>
-                <h2 class="heard">Recent blogs</h2>
-            </div>
-            <div class="recentblog">
-                <div class="blog-box">
-                    <a href="blogs.html">
-                        <div class="blog-image">
-                            <img src="library.jpg" alt="">
-                        </div>
-                    </a>
-                    
-                    <div class="blog-text">
-                        
-                        <a href="one.html" class="blog-title">The most visited library </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae massa sollicitudin, finibus nulla id, lacinia leo</p>
-                        <div id="icons">
-                            <a href="editblog.html"><i class="fa-solid fa-pen"></i></a>
-                            <i class="fa-solid fa-trash"></i>
-                            
-                        </div>
-                       
-                    </div>
-            
-                </div>
-                <div class="blog-box">
-                    <div class="blog-image">
-                        <img src="choral.jpg" alt="">
-                    </div>
-                    <div class="blog-text">
-                        
-                        <a href="two.html" class="blog-title"> Top 10 museum in Africa</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae massa sollicitudin, finibus nulla id, lacinia leo</p>
-                        <div id="icons">
-                            <a href="editblog.html"><i class="fa-solid fa-pen"></i></a>
-                            <i class="fa-solid fa-trash"></i>
-                            
-                        </div>
-                    
-                    </div>
-            
-                </div>
-                <div class="blog-box">
-                    <div class="blog-image">
-                        <img src="books.jpg" alt="">
-                    </div>
-                    <div class="blog-text">
-                        
-                        <a href="three.html" class="blog-title"> books as a source of knowledge</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae massa sollicitudin, finibus nulla id, lacinia leo</p>
-                        <div id="icons">
-                            <a href="editblog.html"><i class="fa-solid fa-pen"></i></a>
-                            <i class="fa-solid fa-trash"></i>
-                            
-                        </div>
-                     
-                    </div>
-            
-                </div>
+        <div class="sidebar_1" id="logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="home">Sign out</span>
+        </div>
+      </div>
+      <main>
+        <h1 class="title">blog management</h1>
+        <div class="button">
+          <a href="create.blog.html"><button>create New Blogs</button></a>
+        </div>
+        <div>
+          <h2 class="heard">Recent blogs</h2>
+        </div>
+        <div class="recentblog">
+          <div class="blog-box">
+            <a href="blogs.html">
+              <div class="blog-image">
+                <img src="library.jpg" alt="" />
+              </div>
+            </a>
 
+            <div class="blog-text">
+              <a href="one.html" class="blog-title"
+                >The most visited library
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                vitae massa sollicitudin, finibus nulla id, lacinia leo
+              </p>
+              <div id="icons">
+                <a href="editblog.html"><i class="fa-solid fa-pen"></i></a>
+                <i class="fa-solid fa-trash delete"></i>
+              </div>
             </div>
-        </main>
-        
+          </div>
+          <!--
+          <div class="blog-box">
+            <div class="blog-image">
+              <img src="choral.jpg" alt="" />
+            </div>
+            <div class="blog-text">
+              <a href="two.html" class="blog-title"> Top 10 museum in Africa</a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                vitae massa sollicitudin, finibus nulla id, lacinia leo
+              </p>
+              <div id="icons">
+                <a href="editblog.html"><i class="fa-solid fa-pen"></i></a>
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="blog-box">
+            <div class="blog-image">
+              <img src="books.jpg" alt="" />
+            </div>
+            <div class="blog-text">
+              <a href="three.html" class="blog-title">
+                books as a source of knowledge</a
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                vitae massa sollicitudin, finibus nulla id, lacinia leo
+              </p>
+              <div id="icons">
+                <a href="editblog.html"><i class="fa-solid fa-pen"></i></a>
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+      </main>
     </section>
-</body>
+    <script type="module" src="./manage.js"></script>
+  </body>
 </html>
