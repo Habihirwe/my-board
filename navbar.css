@@ -40,6 +40,7 @@ nav ul{
     align-content: center;
     margin-right: 120px;
     gap: 50px;
+    z-index: 2;
 }
 nav ul li{
     margin-top: 0%;

@@ -26,6 +26,9 @@ main{
     height: 50px;
     width: 250px;
 }
+.photo input{
+    width:250px;
+}
 /* .description input{
     height: 100px;
     width: 300px;

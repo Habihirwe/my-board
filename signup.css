@@ -6,7 +6,11 @@ body{
     flex-direction: column;
     align-items: flex-start;
 }
-
+form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 main{
     margin-top: 100px;
     display: flex;
@@ -33,13 +37,12 @@ p{
 p a{
     color: darkred;
 }
-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
+
 input{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 300px;
     margin: 15px;
     border: none;
@@ -58,7 +61,7 @@ input{
 }
 button{
     width: 80px;
-    margin-left: 310px;
+    margin-left: 470px;
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
