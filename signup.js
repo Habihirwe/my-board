@@ -10,11 +10,14 @@ let activate=document.querySelectorAll("nav a").forEach((link)=>{
         link.classList.add('active')
     }
 })
-
 menu.onclick = ()=> {
     // menu.classList.toggle('');
     navbar.classList.toggle('open')
 }
+// menu.onclick = ()=> {
+//     // menu.classList.toggle('');
+//     navbar.classList.toggle('open')
+// }
 
 // function adddata(){
 //     var first=document.getElementById('first').value;
