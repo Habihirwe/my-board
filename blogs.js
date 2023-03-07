@@ -20,6 +20,7 @@ let blogTemplate = list.querySelector(".blog-box");
 list.innerHTML = "";
 blogs?.forEach((blog) => {
   let blogCard = blogTemplate.cloneNode(true);
+  blogCard.style.visibility = "visible"
   let image = blogCard.querySelector(".blog-img");
   image.onerror = () => {
     image.src =
